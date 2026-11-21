@@ -1,0 +1,44 @@
+﻿{
+    "name":  "herman-scout",
+    "version":  "1.0.0",
+    "description":  "",
+    "main":  "index.js",
+    "scripts":  {
+                    "dev":  "tsx watch src/index.ts",
+                    "start":  "tsx src/index.ts",
+                    "db:init":  "tsx scripts/init-db.ts",
+                    "test:autopsy":  "tsx scripts/test-autopsy.ts",
+                    "test:send":  "tsx scripts/test-send.ts",
+                    "stats":  "tsx scripts/stats.ts",
+                    "typecheck":  "tsc --noEmit"
+                },
+    "repository":  {
+                       "type":  "git",
+                       "url":  "git+https://github.com/HERMAN-Software-Solutions/herman-scout.git"
+                   },
+    "keywords":  [
+
+                 ],
+    "author":  "",
+    "license":  "ISC",
+    "bugs":  {
+                 "url":  "https://github.com/HERMAN-Software-Solutions/herman-scout/issues"
+             },
+    "homepage":  "https://github.com/HERMAN-Software-Solutions/herman-scout#readme",
+    "devDependencies":  {
+                            "@types/node":  "^26.6.6",
+                            "tsx":  "^4.23.15",
+                            "typescript":  "^7.0.2"
+                        },
+    "dependencies":  {
+                         "@getbrevo/brevo":  "^6.2.0",
+                         "@google/generative-ai":  "^0.24.1",
+                         "@neondatabase/serverless":  "^1.2.1",
+                         "axios":  "^1.21.1",
+                         "cheerio":  "^1.2.0",
+                         "dotenv":  "^18.0.10",
+                         "node-cron":  "^4.6.0",
+                         "p-limit":  "^7.3.3",
+                         "zod":  "^4.6.7"
+                     }
+}
